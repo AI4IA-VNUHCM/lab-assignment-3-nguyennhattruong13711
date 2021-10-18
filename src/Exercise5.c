@@ -13,7 +13,16 @@ ______________________________________
 
 void Ex5(int arr[], int n){
 	//Your codes here
+	int t = 0, po[n];
+	for(int i = 0; i < n; i++){
+		if(arr[i] > 0) printf("%d ", arr[i]);
+		else{
+			po[t] = arr[i];
+			t++;
+		}
+	}
 	
+	for(int i = 0; i < t; i++) printf("%d ", po[i]);
 }
 
 int main(int argc, char *argv[]) {
